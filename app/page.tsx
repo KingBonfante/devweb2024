@@ -1,5 +1,12 @@
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+
 export default function Home() {
   return (
-   <h1 className="text-center">Página Inicial 2</h1>
+   <div>
+      <Header/>
+      <Banner/>
+   </div>
   );
 }
+
