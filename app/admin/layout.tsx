@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import Aside from "./components/Aside";
 
 export default function AdminLayout({
     children,
@@ -10,7 +11,10 @@ export default function AdminLayout({
             <body>
                 <div>
                     <NavBar/>
-                    {children}
+                    <div className="flex">  
+                      <Aside/>             
+                      {children}
+                    </div>
                 </div>
             </body>
         </html>
