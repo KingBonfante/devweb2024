@@ -1,5 +1,13 @@
+import ListStudent from "./List";
+import NewStudent from "./New";
+
 export default function Student(){
     return(
-        <h1>Cadastre o Estudante</h1>
+        <div className="w-full flex flex-col justify-center mt-6">
+            <div>
+                <NewStudent/>
+            </div>
+            <ListStudent/>
+        </div>
     )
 }
